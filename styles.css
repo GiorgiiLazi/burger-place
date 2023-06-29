@@ -18,10 +18,11 @@ body{
     display:none;
 }
 .dark-theme{
-    background-image: linear-gradient(to right, #631010, #6e150e, #781a0b, #822006, #8c2700);
+    background-image: linear-gradient(to right, #843838, #dd2114, #d92f15, #dd3c0f, #b73705);
 }
 /* navbar */
-nav{
+.main-nav{
+    z-index: 2;
     position:fixed;
     display:flex;
     justify-content: space-between;
@@ -66,7 +67,6 @@ nav{
     display:flex;
     align-self:center;
     box-sizing: border-box;
-    /* justify-self: center; */
     cursor: pointer;
     font-family: 'Roboto Flex', sans-serif;
     font-weight: bold;
@@ -106,6 +106,44 @@ nav{
 .wallpaper{
     width: 100%;
 }
+/* menu nav */
+.menu-nav{
+    position:sticky;
+    top:80px;
+}
+.menu-nav, .menu-center, .menu-list{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: purple;
+}
+.menu-list{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around
+}
+.menu-list li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-list li a{
+    font-family: Oswald;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+    display:flex;
+    align-self:center;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu-list li:hover{
+    background-color: orangered;
+}
 /* delivery services */
 .delivery{
     display: flex;
@@ -122,14 +160,22 @@ nav{
     text-align: left;
 }
 /* map */
+.map-container{
+    margin: 0 30px;
+    height: auto;
+}
 .map{
     margin: 20px auto;
     width: 100% ;
     border-radius: 8px;;
+    height: 700px ;
 }
+
+
+
 @media only screen and (max-width: 850px){
     /* navbar */
-    nav{
+    .main-nav{
         flex-direction: column;
         justify-content: start;
     }
