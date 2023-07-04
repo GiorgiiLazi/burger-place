@@ -74,6 +74,10 @@ body{
 .nav-items li:hover{
     background-color:deepskyblue;
 }
+.nav-items li a{
+    text-decoration: none;
+    color: white;
+}
 .nav-toggle{
     position: absolute;
     top: 1rem;
@@ -169,6 +173,53 @@ body{
     width: 100% ;
     border-radius: 8px;;
     height: 700px ;
+}
+/* menu items */
+
+.menu-desc{
+    background-color: black;
+    color: white;
+    font-family: Oswald;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-transform: uppercase;
+}
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+
+}
+.card{
+    width: 32%;
+    border-radius: 12px;
+    background:rgb(248, 90, 32);
+    margin: 15px auto;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: left;
+    max-height: 700px;
+}
+.card *{
+    margin: 10px 25px;
+}
+.card h1{
+    font-size: 24px;
+}
+.card h4{
+    color:#843838;
+    font-size: 0.8em;
+}
+.card img{
+    width: 100%;
+    border-radius: 12px;
+    margin: 0;
+    height: 300px;
 }
 
 

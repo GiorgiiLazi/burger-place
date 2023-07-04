@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bloody Burger</title>
+    <link rel="shortcut icon" href="./img/burger-logo.png" type="image/x-icon">
     <!-- day/night mode from Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="styles.css">
@@ -29,7 +30,7 @@
             <span class="bar"></span>
         </button>
         <ul class="nav-items">
-            <li>Доставка</li>
+            <li><a href="#delivery">Доставка</a></li>
             <li>Франшиза</li>
             <li>Контакты</li>
             <li>555-55-55</li>
@@ -56,12 +57,11 @@
     <nav class="menu-nav">
         <div class="menu-center">
             <ul class="menu-list">
-                <li><a href="">Бургеры</a></li>
-                <li><a href="">Картошка</a></li>
-                <li><a href="">Салаты</a></li>
-                <li><a href="">Напитки</a></li>
-                <li><a href="">Мороженое</a></li>
-                <li><a href="">Комбо</a></li>
+                <li><a href="#burger">Бургеры</a></li>
+                <li><a href="#fries">Картошка</a></li>
+                <li><a href="#salad">Салаты</a></li>
+                <li><a href="#drinks">Молочные коктейли</a></li>
+                <li><a href="#ice-cream">Мороженое</a></li>
             </ul>
         </div>
     </nav>
@@ -71,7 +71,7 @@
 
     <!-- services description -->
 
-    <div class="delivery">
+    <div class="delivery" id="delivery">
         <div class="del-container">
             <h2>Доставка работает круглосуточно!!!</h2>
             <h2>Мы принимаем заказы с 00:00 до 00:00.</h2>
@@ -93,10 +93,122 @@
     </div>
     
 
-
-    
-
     <!-- menu -->
+    <div class="menu-desc" id="burger">Бургеры</div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="./img/cheeseburger.jpg" alt="menu-item">
+            <h1>Бекон-Чиз</h1>
+            <h4>Сыр, говяжья котлета, помидор, бекон, салат </h4>
+            <h3>349.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/chickenburger.jpg" alt="menu-item">
+            <h1>Чикен-Делюкс</h1>
+            <h4>Куриная котлета, помидоры, соленый огурец, салат, луковые кольца</h4>
+            <h3>399.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/texan.jpg" alt="menu-item">
+            <h1>Текс-Мекс</h1>
+            <h4>Соус чили, говяжья котлета, красный лук, сыр, салат</h4>
+            <h3>449.99 руб.</h3>
+        </div>
+    </div>
+
+    <div class="menu-desc" id="fries">Картошка</div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="./img/french-fries.jpg" alt="menu-item">
+            <h1>Классические</h1>
+            <h4></h4>
+            <h3>69.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/french-fries2.jpg" alt="menu-item">
+            <h1>Волнистые</h1>
+            <h4></h4>
+            <h3>99.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/french-fries3.jpg" alt="menu-item">
+            <h1>Хрустящие</h1>
+            <h4></h4>
+            <h3>119.99 руб.</h3>
+        </div>
+    </div>
+
+    <div class="menu-desc" id="salad">Салаты</div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="./img/salad1.jpg" alt="menu-item">
+            <h1>Греческий</h1>
+            <h4>с винегретной заправкой и курицей-гриль</h4>
+            <h3>159.99 руб</h3>
+        </div>
+        <div class="card">
+            <img src="./img/salad2.jpg" alt="menu-item">
+            <h1>Клубничный</h1>
+            <h4>со шпинатом, клубникой и творожным сыром</h4>
+            <h3>159.99 руб</h3>
+        </div>
+        <div class="card">
+            <img src="./img/salad3.jpg" alt="menu-item">
+            <h1>Осенний</h1>
+            <h4>с капустой и кабачками</h4>
+            <h3>159.99 руб</h3>
+        </div>
+    </div>
+
+    <div class="menu-desc" id="drinks">Молочные коктейли</div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="./img/milkshake.jpg" alt="menu-item">
+            <h1>Шоколадный</h1>
+            <h4></h4>
+            <h3>99.99 руб</h3>
+        </div>
+        <div class="card">
+            <img src="./img/milkshake2.jpg" alt="menu-item">
+            <h1>Карамельный</h1>
+            <h4></h4>
+            <h3>99.99 руб</h3>
+        </div>
+        <div class="card">
+            <img src="./img/milkshake3.jpg" alt="menu-item">
+            <h1>Черничный</h1>
+            <h4></h4>
+            <h3>99.99 руб</h3>
+        </div>
+    </div>
+
+    <div class="menu-desc" id="ice-cream">Мороженое</div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="./img/vanilla.jpg" alt="menu-item">
+            <h1>Ванильное</h1>
+            <h4></h4>
+            <h3>129.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/pistashio.jpg" alt="menu-item">
+            <h1>Фисташковое</h1>
+            <h4></h4>
+            <h3>129.99 руб.</h3>
+        </div>
+        <div class="card">
+            <img src="./img/chocolate.jpg" alt="menu-item">
+            <h1>Шоколадное</h1>
+            <h4></h4>
+            <h3>129.99 руб.</h3>
+        </div>
+    </div>
+    
 
     <!-- company info -->
 
