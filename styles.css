@@ -165,17 +165,21 @@ body{
 }
 /* map */
 .map-container{
-    margin: 0 30px;
-    height: auto;
+    margin:0 auto;
+    width: 100%;
 }
 .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px auto;
-    width: 100% ;
-    border-radius: 8px;;
-    height: 700px ;
+    width: 60%;
+    height: auto;
+}
+.map *{
+    border-radius: 8px;
 }
 /* menu items */
-
 .menu-desc{
     background-color: black;
     color: white;
@@ -303,8 +307,33 @@ footer{
     .nav-items{
         width: 100%;
     }
+    
+    /* scroll */
     .scroll{
         display: none
     }
+    /* menubar */
+    .menu-nav{
+        font-size: 12px;
+    }
+    /* delivery */
+    .delivery{
+        margin: 0 20px
+    }
+    /* map */
+    .map{
+        height: auto;
+        width: 60%;
+    }
+    /* menu items */
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin: 5px;
+        width: auto
+    }
+
 }
 
