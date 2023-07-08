@@ -316,23 +316,29 @@ footer{
     .menu-nav{
         font-size: 12px;
     }
+    .menu-list li a{
+        font-size: 8px;
+    }
     /* delivery */
     .delivery{
         margin: 0 20px
     }
     /* map */
     .map{
-        height: auto;
-        width: 60%;
+        width: 70%;
+    
     }
     /* menu items */
     .card-wrapper{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .card{
         margin: 5px;
-        width: auto
+        width: auto;
+        min-width: 300px;
     }
 
 }
