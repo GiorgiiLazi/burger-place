@@ -221,6 +221,60 @@ body{
     margin: 0;
     height: 300px;
 }
+/* company description */
+.company-desc{
+    margin: 50px;
+    border-radius: 8px;
+    background-color:rgb(248, 90, 32);
+    
+    color: black
+}
+.desc-wrapper{
+    margin: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.desc-wrapper h1{
+    text-align: center;
+    font-size: 36px;
+}
+.desc-wrapper *{
+    padding: 15px 0;
+    font-family: Oswald;
+    font-size: 24px;
+}
+/* footer */
+footer{
+    color: white;
+    padding: 50px 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* scroll */
+.scroll{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right: 15px;
+    top: 200px;
+    width: 40px;
+    height: 120px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+.scroll *{
+    margin: 5px;
+    height: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
 
 
 
@@ -248,6 +302,9 @@ body{
     }
     .nav-items{
         width: 100%;
+    }
+    .scroll{
+        display: none
     }
 }
 
